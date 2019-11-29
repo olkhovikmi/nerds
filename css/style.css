@@ -6,6 +6,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/robotobold.woff2") format("woff2"),
@@ -13,6 +14,7 @@
   font-style: bold;
   font-weight: 700;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/robotomedium.woff2") format("woff2"),
@@ -21,3 +23,79 @@
   font-weight: 500;
 }
 
+/*=======================HEADER======================= */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;  
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #eeeeee;
+}
+
+.wrap-center {
+  width: 80%;
+  max-width: 1160px;
+  margin: 0 auto;  
+}
+
+.nav {  
+  padding-top: 30px;
+}
+
+.nav-menu {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+.nav-menu a {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-menu .logo {
+  margin-right: 200px;
+}
+
+.nav-menu .basket {
+  position: relative;
+  margin-right: 0;
+  margin-left: 250px;
+}
+
+.nav-menu .basket::before {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: -30px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("/img/shopping-cart_icon-icons.com_72552.svg") no-repeat ;
+}
+.slider-items {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-items li {
+  list-style: none;
+}
