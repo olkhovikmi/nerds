@@ -24,13 +24,10 @@
 }
 
 /*=======================HEADER======================= */
-body {
-  margin: 0;
-  padding: 0;
-}
+
 
 .wrap {
-  width: 100%;  
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -41,14 +38,22 @@ body {
 .wrap-center {
   width: 80%;
   max-width: 1160px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
-.nav {  
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 30px;
 }
 
-.nav-menu {  
+.nav .logo {
+}
+
+.nav-menu {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,11 +62,14 @@ body {
 }
 
 .nav-menu li {
-  margin-right: 40px;
-  list-style-type: none;
+  
+  margin-right: 45px;
+  list-style: none;
 }
 
-.nav-menu a {
+.nav-menu li a {
+  
+  display: inline-block;
   color: #000000;
   font-family: Roboto;
   font-size: 16px;
@@ -71,14 +79,16 @@ body {
   text-decoration: none;
 }
 
-.nav-menu .logo {
-  margin-right: 200px;
+.nav li:nth-child(4) {
+  margin-right: 0;
 }
+
 
 .nav-menu .basket {
   position: relative;
-  margin-right: 0;
   margin-left: 250px;
+  margin-right: 0;
+
 }
 
 .nav-menu .basket::before {
@@ -89,13 +99,73 @@ body {
   content: "";
   width: 15px;
   height: 15px;
-  background: url("/img/shopping-cart_icon-icons.com_72552.svg") no-repeat ;
+  background: url("/img/shopping-cart_icon-icons.com_72552.svg") no-repeat;
 }
+/****************** SLIDER ***********************/
 .slider-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
+.title {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.title-description {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  color: #283136;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.slider {
+  width: 100%;
+}
+.slider-title {
+  width: 40%;
+}
+
 .slider-items li {
   list-style: none;
+}
+
+.slider-items .link-title {
+  display: inline-block;  
+  padding: 18px 55px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border-radius: 2px;
+}
+
+.image {
+  width: 60%;
+  position: relative;
+  margin-right: 5px;
+}
+
+.radio-slider {
+  position: absolute;
+  bottom: 100px;
+  left: 110px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 15px;
 }
