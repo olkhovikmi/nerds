@@ -68,14 +68,14 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;  
 }
 
 .nav-menu .link-menu {
-  margin-right: 40px;  
+  margin-right: 46px;  
 }
 
 .nav-menu .link-menu:nth-child(4) {
@@ -84,7 +84,7 @@ img {
 
 .nav-menu .basket {
   position: relative;
-  margin-left: 280px;
+  margin-left: 286px;
 }
 
 .nav-menu li a {
@@ -100,7 +100,7 @@ img {
   position: absolute;
   display: block;
   bottom: 10px;
-  left: -30px;
+  left: -40px;
   content: "";
   width: 15px;
   height: 15px;
@@ -178,16 +178,19 @@ img {
   clip: rect(0, 0, 0, 0);
 }
 
+.slider {
+  position: relative;
+}
+
 .slider-controls {
   position: absolute;
-  left: 49%;
-  bottom: 100px;
+  left: 42%;
+  bottom: 105px;
   z-index: 100;  
   width: 160px;
   height: 18px;
   text-align: center;
-  font-size: 0;
-  transform: translateX(-50%);
+  font-size: 0;  
 }
 
 .slider-controls label {
@@ -195,8 +198,7 @@ img {
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 8px;  
-  border-radius: 50%;
+  padding: 8px;    
   cursor: pointer;
 }
 .slider-controls label::after {
@@ -238,3 +240,4 @@ img {
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
+
