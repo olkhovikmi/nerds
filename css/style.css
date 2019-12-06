@@ -309,18 +309,20 @@ img {
 /****************** ABOUT ***********************/
 
 .about {
-  padding: 80px 0;
+  padding-top: 40px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
 }
 
-.design-studio {
+.design-studio-1 {
   width: 57%;
 }
 
-.design-studio b {
+.design-studio-1 b {
   display: block;
+  margin-top: 40px;
   margin-bottom: 35px;
   color: #000000;
   font-size: 45px;
@@ -328,7 +330,7 @@ img {
   line-height: 45px;
 }
 
-.design-studio p {
+.design-studio-1 p {
   margin-top: 0;
   margin-bottom: 45px;
   color: #283136;
@@ -343,7 +345,7 @@ img {
 }
 
 .development li {
-  margin-bottom: 35px;  
+  margin-bottom: 15px;  
   color: #283136; 
 }
 
@@ -368,4 +370,38 @@ img {
   background-color: #fb565a;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+.design-studio-2 {
+  width: 31%;
+  
+}
+
+.statistics {
+  margin-top: 41px;
+  border-collapse: collapse;
+}
+
+.title {
+  margin-bottom: 49px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.statistics th {  
+  padding-right: 26px;
+  padding-bottom: 26px;
+  color: #000000;  
+  text-align: left;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
+
+.statistics td {
+  text-align: left;
+  color: #283136;
+  line-height: 18px;
 }
