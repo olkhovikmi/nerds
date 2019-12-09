@@ -529,18 +529,18 @@ img {
   background-color: #eeeeee;
 }
 /****************** MAP ***********************/
-.map {    
+.map {
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 80px;  
   position: relative;
 }
 
-.container-write {
-  width: 23%;
+.container-write {  
   position: absolute;
   bottom: 50px;
   padding: 45px 50px;
-  background-color: #ffffff;
-  box-sizing: border-box;
+  background-color: #ffffff;  
 }
 
 .checkbox-map {
