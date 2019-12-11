@@ -28,56 +28,37 @@
 	</header>
 	<main>
 		<div class="wrap">
-			<div class="menu-filter">
-				<ul class="filter">
-					<li class="cost-filter"><a href="#">Стоимость:</li>
-					<li class="sort-filter"><a href="#">Сортировать:</li>
-					<li class="price-filter"><a href="#">По цене</li>
-					<li class="type-filter"><a href="#">По типу</li>
-					<li class="name-filter"><a href="#">По названию</a></li>
-					<li class="down-filter"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
-								<g>
-									<g>
-										<image width="11" height="10"
-											xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAA1UlEQVQoU4XOQQ7BUBAG4H9aITZ2Vhqv8crGDbiFOEAPwAXsxQHY4wC9BY5gUS19yYuVlY1I1ZNWNE8Qs5vJ988McWavAXTwvzbE6/UuyFj9t6pLKeLM9gD0fgUI5AXi0M9ww2o0yUy2ABW+BGKVGO293O8y/NzOpgANPrGahUIM03mOHcepqvgWAKhogbMZF7l/9E9vOG0cxkYKNH5hIoyCKJrkvX7WsqxyySzsANQAJa9J0pJSXr7i7HfbdqEwB8ENo2ipL8t/1oYGZ2wRCuECuOv4AcYVPc1qtEGTAAAAAElFTkSuQmCC" />
-									</g>
-								</g>
-							</svg></a></li>
-					<li class="up-filter"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
-								<g>
-									<g>
-										<image width="11" height="10"
-											xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAA1ElEQVQoU4WQQQ7BUBRF72uFmJgZafzGLxM7YBdiAV0AGzAXC2COBXQXWIJBtfQnP0ZGJiJVX0hUaRtveO959+U+Qno0ztjCF8IGcE/a9Mty07ShMAfB9oNgmQsbhlEu6YUdgBqg5DWKWlLKy3vhK9libKRA49gkjLwgmKRgy7KqKrx5ACqJ02c9LHL36J6eWpzMGZsCNEj3VTNfiGEMN4xGk/RoC1Ah4zuhirT2Xu53r2TOTAdALwN8SQRyPHHoE6/XuyBtlQd+dNUlzsw1gM5/GJsH+V09zXbxQnQAAAAASUVORK5CYII=" />
-									</g>
-								</g>
-							</svg></a></li>
-				</ul>
-			</div>
-			<div class="menu-center">
-				<form method="get" action="#">
-					<fieldset class="filter-item">						
+			<div class="form-filter">
+				<form action="#">
+					<fieldset class="filter-item">
+						<legend>Стоимость:</legend>
 						<div class="range-filter">
 							<div class="range-controls">
 								<div class="scale">
-									<div class="bar"></div>					
+									<div class="bar"></div>
 								</div>
 								<div class="toggle toggle-min"></div>
 								<div class="toggle toggle-max"></div>
 							</div>
 							<div class="price-controls">
 								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-								<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+								<label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
 							</div>
 						</div>
 					</fieldset>
-
-					<!-- Другие элементы формы -->
-
+					<fieldset class="grid-items">
+						<legend>Сетка:</legend>
+						<input type="radio" class="visually-hidden" id="adaptive" name="grid-view" checked>
+						<input type="radio" class="visually-hidden" id="fix" name="grid-view">
+						<input type="radio" class="visually-hidden" id="rubber" name="grid-view">
+						<div class="grid-view">
+							<label for="adaptive" class="adaptive">Адаптивная</label>
+							<label for="fix" class="fix">Фиксированная</label>
+							<label for="rubber" class="rubber">Резиновая</label>
+						</div>
+					</fieldset>
 				</form>
 			</div>
-		</div>
 	</main>
 
 </body>
