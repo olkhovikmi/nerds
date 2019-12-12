@@ -734,7 +734,7 @@ textarea:focus {
 	width: 260px;
 	padding: 18px 0;
 	color: #ffffff;
-	font-family: Roboto;
+	font-family: "Roboto";
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
@@ -886,14 +886,20 @@ textarea:focus {
 
 /****************** FORM-FILTER ***********************/
 
-.form-filter {
-  width: 23%;
+.main-center {
   padding-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-filter {
+  width: 23%;  
+  margin-right: 140px;  
 }
 
 .filter-item {
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 35px;
   padding: 0;  
   border: none;  
 }
@@ -969,7 +975,7 @@ textarea:focus {
   width: 80px;
   padding: 8px 10px;
   margin-left: 10px;  
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;  
@@ -1031,11 +1037,15 @@ textarea:focus {
   opacity: 0.3;
 }
 
+#adaptive:checked:disabled ~ .grid-view .adaptive::before,
+#fix:checked:disabled ~ .grid-view .fix::before,
+#rubber:checked:disabled ~ .grid-view .rubber::before,
 #adaptive:disabled ~ .grid-view .adaptive::before,
 #fix:disabled ~ .grid-view .fix::before,
 #rubber:disabled ~ .grid-view .rubber::before {
-  opacity: 0.1;
+  opacity: 0.2;
 }
+
 
 #adaptive:checked ~ .grid-view .adaptive:hover::before,
 #fix:checked ~ .grid-view .fix:hover::before,
@@ -1069,8 +1079,7 @@ textarea:focus {
 }
 
 .grid-checkbox {  
-  margin: 0;
-  margin-top: 50px;
+  margin: 40px 0;  
   padding: 0;
   border: none;
 }
@@ -1098,5 +1107,190 @@ textarea:focus {
   margin-bottom: 0;
 }
 
+.slide::before,.block::before,.news::before,.gallery::before,.bag::before{
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  margin-right: 10px;
+  opacity: 0.4;
+  content: "";
+  background-image: url("/img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  vertical-align: middle;
+}
+
+#checkbox1:checked ~ .grid-features .slide::before,
+#checkbox2:checked ~ .grid-features .block::before,
+#checkbox3:checked ~ .grid-features .news::before,
+#checkbox4:checked ~ .grid-features .gallery::before,
+#checkbox5:checked ~ .grid-features .bag::before {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  margin-right: 10px;
+  opacity: 0.4;
+  content: "";
+  background-image: url("/img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  vertical-align: middle;
+}
+#checkbox1 ~ .grid-features .slide:hover::before,
+#checkbox2 ~ .grid-features .block:hover::before,
+#checkbox3 ~ .grid-features .news:hover::before,
+#checkbox4 ~ .grid-features .gallery:hover::before,
+#checkbox5 ~ .grid-features .bag:hover::before,
+#checkbox1:checked ~ .grid-features .slide:hover::before,
+#checkbox2:checked ~ .grid-features .block:hover::before,
+#checkbox3:checked ~ .grid-features .news:hover::before,
+#checkbox4:checked ~ .grid-features .gallery:hover::before,
+#checkbox5:checked ~ .grid-features .bag:hover::before {
+opacity: 1;
+}
+
+#checkbox1:disabled ~ .grid-features .slide::before,
+#checkbox2:disabled ~ .grid-features .block::before,
+#checkbox3:disabled ~ .grid-features .news::before,
+#checkbox4:disabled ~ .grid-features .gallery::before,
+#checkbox5:disabled ~ .grid-features .bag::before,
+#checkbox1:checked:disabled ~ .grid-features .slide::before,
+#checkbox2:checked:disabled ~ .grid-features .block::before,
+#checkbox3:checked:disabled ~ .grid-features .news::before,
+#checkbox4:checked:disabled ~ .grid-features .gallery::before,
+#checkbox5:checked:disabled ~ .grid-features .bag::before {
+opacity: 0.2;
+}
 
 
+#checkbox1:checked:disabled ~ .grid-features .slide,
+#checkbox2:checked:disabled ~ .grid-features .block,
+#checkbox3:checked:disabled ~ .grid-features .news,
+#checkbox4:checked:disabled ~ .grid-features .gallery,
+#checkbox5:checked:disabled ~ .grid-features .bag,
+#checkbox1:disabled ~ .grid-features .slide,
+#checkbox2:disabled ~ .grid-features .block,
+#checkbox3:disabled ~ .grid-features .news,
+#checkbox4:disabled ~ .grid-features .gallery,
+#checkbox5:disabled ~ .grid-features .bag {
+opacity: 0.3;
+}
+
+.btn-form-shop {
+  width: 260px;
+  padding: 18px 0;
+  color: #000000;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.btn-form-shop:hover {
+  background-color: #dfdfdf;
+}
+
+.btn-form-shop:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+  color: #4d4d4d;
+}
+
+.btn-form-shop:focus {
+  outline: none;
+}
+
+/****************** IMAGE-CENTER ***********************/
+.box-image {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.box-image:last-child {
+  margin-bottom: 0;
+}
+
+.image-center {
+  width: 31%;
+  margin-right: 40px;
+}
+
+.header-image {
+  padding-top: 40px;
+  background-image: url("/img/browser.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.box-image:hover .header-image {
+  background-image: url("/img/browser-on.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.image-center b {
+  display: block;
+  margin-bottom: 69px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.box-image:hover .container {
+  display: block;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: none;
+  padding: 30px 70px;
+  background-color: #eeeeee;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.container-center h2 {
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.container-center p {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.container-center a {
+  display: block;
+  width: 200px;
+  margin-left: 10px;
+  padding: 18px 0;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #fb565a;
+  border-radius: 3px;
+}
+
+.container-center a:hover {
+  background-color: #e74246;
+}
+
+.container-center a:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}

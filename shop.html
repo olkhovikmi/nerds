@@ -17,9 +17,9 @@
 				<div class="logo"><a href="#"><img src="img/nerds-logo.png" alt="Логотип"></a>
 				</div>
 				<ul class="nav-menu">
-					<li class="link-menu"><a href="#">Студия</a></li>
+					<li class="link-menu"><a href="index.html">Студия</a></li>
 					<li class="link-menu"><a href="#">Клиенты</a></li>
-					<li class="link-menu"><a href="#">Магазин</a></li>
+					<li class="link-menu"><a href="shop.html">Магазин</a></li>
 					<li class="link-menu"><a href="#">Контакты</a></li>
 					<li class="basket"><a href="#">Корзина</a></li>
 				</ul>
@@ -27,7 +27,7 @@
 			<h1 class="title-shop">Магазин готовых шаблонов</h1>
 	</header>
 	<main>
-		<div class="wrap">
+		<div class="wrap main-center">
 			<div class="form-filter">
 				<form action="#">
 					<fieldset class="filter-item">
@@ -59,22 +59,65 @@
 					</fieldset>
 					<fieldset class="grid-checkbox">
 						<legend>Особенности:</legend>
-						<input type="checkbox" id="checkbox1" name="slide" checked>
-						<input type="checkbox" id="checkbox2" name="block">
-						<input type="checkbox" id="checkbox3" name="news" checked>
-						<input type="checkbox" id="checkbox4" name="gallery">
-						<input type="checkbox" id="checkbox5" name="bag" disabled>
+						<input type="checkbox" id="checkbox1" name="slide" class="visually-hidden" checked>
+						<input type="checkbox" id="checkbox2" name="block" class="visually-hidden">
+						<input type="checkbox" id="checkbox3" name="news" class="visually-hidden" checked>
+						<input type="checkbox" id="checkbox4" name="gallery" class="visually-hidden">
+						<input type="checkbox" id="checkbox5" name="bag" class="visually-hidden" disabled checked>
 						<div class="grid-features">
 							<label for="checkbox1" class="slide">Слайдер</label>
 							<label for="checkbox2" class="block">Блок преимуществ
 							</label>
-							<label for="checkbox3" class="news" Новости></label>
+							<label for="checkbox3" class="news">Новости</label>
 							<label for="checkbox4" class="gallery">Галерея</label>
 							<label for="checkbox5" class="bag">Корзина</label>
 						</div>
 					</fieldset>
+					<button class="btn-form-shop">Показать</button>
 				</form>
 			</div>
+			<div class="image-center">
+				<b>Сортировать:</b>
+				<div class="box-image">					
+						<div class="header-image"></div>
+						<img src="/img/img-sedona.jpg.jpg" alt="Седона">		
+						<div class="container">
+							<div class="container-center">
+								<h2>Sedona</h2>
+								<p>Информационный сайт<br> 
+										для туристов</p>
+								<a href="#">9 900 руб.</a>
+							</div>
+						</div>			
+				</div>
+				<div class="box-image">					
+						<div class="header-image"></div>
+						<img src="/img/img-barbershop.jpg.jpg" alt="Барбершоп">		
+						<div class="container">
+							<div class="container-center">
+								<h2>Barbershop</h2>
+								<p>Сайт салона красоты.<br>
+										Для мужчин, да.</p>
+								<a href="#">9 900 руб.</a>
+							</div>
+						</div>			
+				</div>
+				<div class="box-image">					
+						<div class="header-image"></div>
+						<img src="/img/img-aplus.jpg.jpg" alt="А Плюс">		
+						<div class="container">
+							<div class="container-center">
+								<h2>A Plus</h2>
+								<p>Лендинг курсов повышения квалификации</p>
+								<a href="#">9 900 руб.</a>
+							</div>
+						</div>			
+				</div>
+			</div>
+			<div class="image-right">
+
+			</div>
+		</div>
 	</main>
 
 </body>
