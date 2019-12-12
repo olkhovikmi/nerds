@@ -46,15 +46,31 @@
 							</div>
 						</div>
 					</fieldset>
-					<fieldset class="grid-items">
+					<fieldset class="grid-radio">
 						<legend>Сетка:</legend>
 						<input type="radio" class="visually-hidden" id="adaptive" name="grid-view" checked>
 						<input type="radio" class="visually-hidden" id="fix" name="grid-view">
-						<input type="radio" class="visually-hidden" id="rubber" name="grid-view">
+						<input type="radio" class="visually-hidden" id="rubber" name="grid-view" disabled>
 						<div class="grid-view">
 							<label for="adaptive" class="adaptive">Адаптивная</label>
 							<label for="fix" class="fix">Фиксированная</label>
 							<label for="rubber" class="rubber">Резиновая</label>
+						</div>
+					</fieldset>
+					<fieldset class="grid-checkbox">
+						<legend>Особенности:</legend>
+						<input type="checkbox" id="checkbox1" name="slide" checked>
+						<input type="checkbox" id="checkbox2" name="block">
+						<input type="checkbox" id="checkbox3" name="news" checked>
+						<input type="checkbox" id="checkbox4" name="gallery">
+						<input type="checkbox" id="checkbox5" name="bag" disabled>
+						<div class="grid-features">
+							<label for="checkbox1" class="slide">Слайдер</label>
+							<label for="checkbox2" class="block">Блок преимуществ
+							</label>
+							<label for="checkbox3" class="news" Новости></label>
+							<label for="checkbox4" class="gallery">Галерея</label>
+							<label for="checkbox5" class="bag">Корзина</label>
 						</div>
 					</fieldset>
 				</form>
