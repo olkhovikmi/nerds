@@ -115,6 +115,14 @@ img {
   opacity: 0.3;
 }
 
+.nav-menu .active-shop a {
+  border-bottom: 2px solid #fb565a;
+}
+
+.nav-menu .active-index a {
+  border-bottom: 2px solid #fb565a;
+}
+
 .nav-menu .basket::before {
   position: absolute;
   display: block;
@@ -552,8 +560,8 @@ img {
 
 .checkbox-map {
   position: absolute;
-  right: 390px;
-  bottom: 135px;
+  right: 540px;
+  bottom: 225px;
 }
 
 .write h3 {
@@ -1353,7 +1361,7 @@ textarea:focus {
   margin-right: 48px;
 }
 
-.filter-right .price-right a {
+.filter-right .price-right  {
   opacity: 1;
 }
 
@@ -1366,6 +1374,10 @@ textarea:focus {
   margin-right: 28px;
 }
 
+.filter-right li {
+  opacity: 0.3;
+}
+
 .filter-right a {
   display: inline-block;
   color: #000000;
@@ -1373,23 +1385,30 @@ textarea:focus {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  text-decoration: none;
-  opacity: 0.3;
+  text-decoration: none;  
 }
 
-.filter-right a:hover {
+.filter-right .type-right:hover,.filter-right .name-right:hover,.filter-right .updown-right .up-right:hover {
   opacity: 0.6;
 }
 
-.filter-right a:active {
+
+.filter-right .type-right:active,.filter-right .name-right:active,.filter-right .updown-right .up-right:active {
   opacity: 1;
 }
 
-.filter-right .down-rigth {
+.filter-right .updown-right .down-rigth {
   margin-right: 10px;
+  
+}
+
+.filter-right .updown-right {   
   opacity: 1;
 }
 
+.filter-right .updown-right .up-right {   
+  opacity: 0.3;
+}
 /****************** PAGE ***********************/
 
 .container-page {
