@@ -1236,6 +1236,7 @@ textarea:focus {
   text-transform: uppercase;
   border-radius: 3px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-form-shop:hover {
