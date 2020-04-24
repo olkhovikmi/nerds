@@ -1,24 +1,24 @@
 /* Подключение шрифтов */
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/roboto.woff2") format("woff2"),
-    url("/fonts/roboto.woff") format("woff");
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/robotobold.woff2") format("woff2"),
-    url("/fonts/robotobold.woff") format("woff");
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
   font-style: bold;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/robotomedium.woff2") format("woff2"),
-    url("/fonts/robotomedium.woff") format("woff");
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
   font-style: medium;
   font-weight: 500;
 }
@@ -131,7 +131,7 @@ img {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("/img/shopping-cart_icon-icons.com_72552.svg");
+  background-image: url("../img/shopping-cart_icon-icons.com_72552.svg");
   background-repeat: no-repeat;
 }
 
@@ -190,21 +190,21 @@ img {
 
 .slider-item:nth-child(1) {
   display: none;
-  background-image: url("/img/slide1.png");
+  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 34px;
 }
 
 .slider-item:nth-child(2) {
   display: none;
-  background-image: url("/img/slide2.png");
+  background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 98% 34px;
 }
 
 .slider-item:nth-child(3) {
   display: none;
-  background-image: url("/img/slide3.png");
+  background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 34px;
 }
@@ -1105,7 +1105,7 @@ textarea:focus {
   width: 25px;
   height: 25px;
   opacity: 0.4;
-  background-image: url("/img/radio-on.png");
+  background-image: url("../img/radio-on.png");
   background-repeat: no-repeat;
 }
 
@@ -1119,7 +1119,7 @@ textarea:focus {
   height: 25px;
   vertical-align: middle;
   opacity: 0.4;
-  background-image: url("/img/radio-off.png");
+  background-image: url("../img/radio-off.png");
   background-repeat: no-repeat;
 }
 
@@ -1163,7 +1163,7 @@ textarea:focus {
   margin-right: 10px;
   opacity: 0.4;
   content: "";
-  background-image: url("/img/checkbox-off.png");
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   vertical-align: middle;
@@ -1180,7 +1180,7 @@ textarea:focus {
   margin-right: 10px;
   opacity: 0.4;
   content: "";
-  background-image: url("/img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   vertical-align: middle;
@@ -1270,13 +1270,13 @@ textarea:focus {
 
 .header-image {
   padding-top: 40px;
-  background-image: url("/img/browser.png");
+  background-image: url("../img/browser.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .box-image:hover .header-image {
-  background-image: url("/img/browser-on.png");
+  background-image: url("../img/browser-on.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
